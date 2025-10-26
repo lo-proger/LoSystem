@@ -13,9 +13,7 @@ typedef uint32_t size_t;
 
 
 #ifndef __cplusplus
-typedef int bool;
-#define true 1
-#define false 0
+typedef enum { false, true } bool;
 #endif
 
 #endif
