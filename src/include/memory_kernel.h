@@ -1,4 +1,5 @@
-#include "./types.h"
+#include "./stdbool.h"
+#include "./stdint.h"
 
 typedef struct {
     uint16_t limit_low; // указывает сколько памяти начиная с base может использовать процесс
