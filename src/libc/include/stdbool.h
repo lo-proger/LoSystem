@@ -14,8 +14,8 @@ LLLLLLLLL      OOOOO      SSSS         Y         SSSS
 
 */
 
-#ifndef LOSYS_STDBOOL_H
-#define LOSYS_STDBOOL_H
+#ifndef LOSYS_LIBC_STDBOOL_H
+#define LOSYS_LIBC_STDBOOL_H
 
 #define bool _Bool
 #define true 1

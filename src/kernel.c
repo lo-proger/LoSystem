@@ -1,4 +1,5 @@
-#include "./include/stddef.h"
+#include <stddef.h>
+
 void kernel_main(void) {
     volatile unsigned short* video = (volatile unsigned short*)0xB8000;
 

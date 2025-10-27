@@ -14,8 +14,8 @@ LLLLLLLLL      OOOOO      SSSS         Y         SSSS
 
 */
 
-#ifndef LOSYS_STDDEF_H
-#define LOSYS_STDDEF_H
+#ifndef LOSYS_LIBC_STDDEF_H
+#define LOSYS_LIBC_STDDEF_H
 
 typedef unsigned int size_t;
 typedef int ptrdiff_t;

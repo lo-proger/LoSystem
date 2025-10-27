@@ -1,4 +1,21 @@
-#include "../include/memory_kernel.h"
+/*
+
+LLLL           OOOOO      SSSS     Y       Y     SSSS
+LLLL          OO   OO    SS   S     Y     Y     SS   S
+LLLL          OO   OO     SS         Y   Y       SS
+LLLL          OO   OO      SS         Y Y         SS
+LLLL          OO   OO       SS         Y           SS
+LLLLLLLLL     OO   OO    S   SS        Y        S   SS
+LLLLLLLLL      OOOOO      SSSS         Y         SSSS
+
+// Внутриядерные библиотеки \\
+||    Библиотеки, которые    ||
+||являются частью самого ядра||
+\\         MEMORY.C         //
+
+*/
+
+#include "./memory.h"
 
 gdt_struct_t create_gdt_struct(uint16_t limit_low, uint32_t base, uint8_t access, uint8_t granularity) {
     gdt_struct_t gdt_struct;

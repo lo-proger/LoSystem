@@ -1,5 +1,25 @@
-#include "./stdbool.h"
-#include "./stdint.h"
+/*
+
+LLLL           OOOOO      SSSS     Y       Y     SSSS
+LLLL          OO   OO    SS   S     Y     Y     SS   S
+LLLL          OO   OO     SS         Y   Y       SS
+LLLL          OO   OO      SS         Y Y         SS
+LLLL          OO   OO       SS         Y           SS
+LLLLLLLLL     OO   OO    S   SS        Y        S   SS
+LLLLLLLLL      OOOOO      SSSS         Y         SSSS
+
+// Внутриядерные библиотеки \\
+||    Библиотеки, которые    ||
+||являются частью самого ядра||
+\\     KERNEL.H      //
+
+*/
+
+#ifndef LOSYS_KERNELIB_MEMORY_H
+#define LOSYS_KERNELIB_MEMORY_H
+
+#include <stdbool.h>
+#include <stdint.h>
 
 typedef struct {
     uint16_t limit_low; // указывает сколько памяти начиная с base может использовать процесс
@@ -58,3 +78,5 @@ uint8_t create_gdt_access(bool ed_r, bool w_c, bool ex, bool dt, uint8_t DPL, bo
 uint8_t create_gdt_granularity(uint8_t limit_high, bool lm, bool db, bool g);
 
 gdt_pointer_t create_gdt_pointer(gdt_struct_t* gdt_array, uint16_t array_size);
+
+#endif

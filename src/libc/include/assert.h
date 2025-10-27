@@ -14,8 +14,8 @@ LLLLLLLLL      OOOOO      SSSS         Y         SSSS
 
 */
 
-#ifndef LOSYS_ASSERT_H
-#define LOSYS_ASSERT_H
+#ifndef LOSYS_LIBC_ASSERT_H
+#define LOSYS_LIBC_ASSERT_H
 
 #ifdef NDEBUG
     /* Режим release - assert игнорируется */

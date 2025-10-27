@@ -14,8 +14,8 @@ LLLLLLLLL      OOOOO      SSSS         Y         SSSS
 
 */
 
-#ifndef LOSYS_STDINT_H
-#define LOSYS_STDINT_H
+#ifndef LOSYS_LIBC_STDINT_H
+#define LOSYS_LIBC_STDINT_H
 
 // Числа с разным размером
 typedef unsigned char      uint8_t;

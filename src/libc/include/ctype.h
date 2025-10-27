@@ -14,6 +14,8 @@ LLLLLLLLL      OOOOO      SSSS         Y         SSSS
 
 */
 
+#ifndef LOSYS_LIBC_CTYPE_H
+#define LOSYS_LIBC_CTYPE_H
 
 #define _UPPER   0x01 // большие буквы
 #define _LOWER   0x02 // маленькие буквы
@@ -56,3 +58,5 @@ int isprint(int c);
 int tolower(int c);
 
 int toupper(int c);
+
+#endif
