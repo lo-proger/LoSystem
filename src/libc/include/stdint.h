@@ -1,3 +1,19 @@
+/*
+
+LLLL           OOOOO      SSSS     Y       Y     SSSS
+LLLL          OO   OO    SS   S     Y     Y     SS   S
+LLLL          OO   OO     SS         Y   Y       SS
+LLLL          OO   OO      SS         Y Y         SS
+LLLL          OO   OO       SS         Y           SS
+LLLLLLLLL     OO   OO    S   SS        Y        S   SS
+LLLLLLLLL      OOOOO      SSSS         Y         SSSS
+
+//C Standart Lybrary 17\\
+||  ISO/IEC 9899:2018   ||
+\\      STDINT.H       //
+
+*/
+
 #ifndef LOSYS_STDINT_H
 #define LOSYS_STDINT_H
 
