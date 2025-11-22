@@ -71,6 +71,10 @@ typedef struct {
     3-0>>limit_high-> старшие байты лимита
 */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 gdt_struct_t create_gdt_struct(uint16_t limit_low, uint32_t base, uint8_t access, uint8_t granularity);
 
 uint8_t create_gdt_access(bool ed_r, bool w_c, bool ex, bool dt, uint8_t DPL, bool p);
@@ -78,5 +82,9 @@ uint8_t create_gdt_access(bool ed_r, bool w_c, bool ex, bool dt, uint8_t DPL, bo
 uint8_t create_gdt_granularity(uint8_t limit_high, bool lm, bool db, bool g);
 
 gdt_pointer_t create_gdt_pointer(gdt_struct_t* gdt_array, uint16_t array_size);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

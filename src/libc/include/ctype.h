@@ -29,6 +29,10 @@ LLLLLLLLL      OOOOO      SSSS         Y         SSSS
 #define EOF (-1)
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 // функции проверки
 
 int isalpha(int c);
@@ -58,5 +62,9 @@ int isprint(int c);
 int tolower(int c);
 
 int toupper(int c);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
